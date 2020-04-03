@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+        <a href="" data-toggle="modal" data-target="#modal">SignUp </a>
+        <div class="modal" id="modal" data-backdrop="false" data-keyboard="false">
+  
+        <div class="modal-body">
+
+          <div class="form-wrapper">
+            <img src="ic-close.svg"class="ic-close" onclick="window.close(this.src)">
+            <img src="https://lh3.googleusercontent.com/d/1sgSh-U5tyBMI_fxDS4l1cTuf2M-ttSHv=s220?authuser=0"
+            alt="logo" class="ic-logo"/>
+            <div class="login">
+              <p class="word">Create a new account</p>
+              <p class="word2">join pollz to publish your poll</p>
+            </div>
+            
+            <form onSubmit={this.handleSubmit} noValidate> 
+
+              <div class="name">
+                <label htmlFor="name">NAME</label><br>
+                <input
+
+                  className=""
+                  placeholder="Name"
+                  type="name"
+                  name="name"
+                  noValidate
+                  onChange={this.handleChange}
+                />
+              </div>
+
+            
+              <div class="email">
+                <label htmlFor="email">EMAIL</label><br>
+                <input
+
+                  className=""
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  noValidate
+                  onChange={this.handleChange}
+                />
+              
+              </div>
+              <div className="password">
+                <label htmlFor="password">PASSWORD</label><br>
+                <input
+                  className=""
+                  placeholder="Password"
+                  type="password"
+                  name="password"
+                  noValidate
+                  onChange={this.handleChange}
+                />
+              </div>
+        
+              <div class="createAccount">
+                <button type="submit" class="btn">Sign up</button>
+                <small class="acc">Already have an account? <a href="">Log in</a></small>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+</body>
+
+
+</Html>
